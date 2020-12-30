@@ -172,14 +172,14 @@ function ButtonsDoc(props)
                 <li><Typography className="mb-16" component="div"><strong>CSS only</strong>. You can remove the pointer events style on the disabled state of
                     the <code>{`<button>`}</code> element:</Typography>
 
-                    {/* <FuseHighlight component="pre" className="language-css">
+                    <FuseHighlight component="pre" className="language-css">
                         {` 
 .MuiButtonBase-root:disabled {
  cursor: not-allowed;
  pointer-events: auto;
 }
 `}
-                    </FuseHighlight> */}
+                    </FuseHighlight>
                     <Typography className="mb-16" component="div">However:</Typography>
                     <ul>
                         <li>You should add <code>{`pointer-events: none;`}</code> back when you need to display <a href="/components/tooltips/#disabled-elements">tooltips on disabled elements</a>.
