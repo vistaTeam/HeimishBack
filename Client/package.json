@@ -1,5 +1,5 @@
 {
-    "name": "fuse-react-app",
+    "name": "client",
     "version": "5.3.0",
     "private": true,
     "dependencies": {
