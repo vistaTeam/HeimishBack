@@ -84,23 +84,23 @@ const styles = theme => ({
 
 const viewNamesObj = {
 	month: {
-		title: 'Month',
+		title: 'חודשי',
 		icon: 'view_module'
 	},
 	week: {
-		title: 'Week',
+		title: 'שבועי',
 		icon: 'view_week'
 	},
 	work_week: {
-		title: 'Work week',
+		title: 'שבועי - עבודה',
 		icon: 'view_array'
 	},
 	day: {
-		title: 'Day',
+		title: 'יומי',
 		icon: 'view_day'
 	},
 	agenda: {
-		title: 'Agenda',
+		title: 'לפי הערה',
 		icon: 'view_agenda'
 	}
 };
@@ -143,11 +143,11 @@ class CalendarHeader extends Toolbar {
 									<Icon className="text-32 mx-12">today</Icon>
 								</FuseAnimate>
 								<FuseAnimate animation="transition.slideLeftIn" delay={300}>
-									<Typography variant="h6">Calendar</Typography>
+									<Typography variant="h6">לוח לועזי</Typography>
 								</FuseAnimate>
 							</div>
 							<div className="flex items-center">
-								<Tooltip title="Today">
+								<Tooltip title="היום">
 									<div>
 										<FuseAnimate animation="transition.expandIn" delay={500}>
 											<IconButton
@@ -165,7 +165,7 @@ class CalendarHeader extends Toolbar {
 
 						<FuseAnimate delay={500}>
 							<div className="flex items-center justify-center">
-								<Tooltip title="Previous">
+								<Tooltip title="הקודם">
 									<IconButton
 										aria-label="Previous"
 										onClick={this.navigate.bind(null, navigate.PREVIOUS)}
@@ -176,7 +176,7 @@ class CalendarHeader extends Toolbar {
 									</IconButton>
 								</Tooltip>
 								<Typography variant="h6">{label}</Typography>
-								<Tooltip title="Next">
+								<Tooltip title="הבא">
 									<IconButton aria-label="Next" onClick={this.navigate.bind(null, navigate.NEXT)}>
 										<Icon>
 											{mainThemeDark.direction === 'ltr' ? 'chevron_right' : 'chevron_left'}
